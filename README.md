@@ -24,4 +24,33 @@ Then either preparing the disk ahead in Gparted or use the "Something else" duri
 
 Finish installing Ubuntu. 
 
+### 3. Install some apps
+```
+sudo apt update && sudo apt install gparted git
+```
 
+```
+sudo snap install code nextcloud gparted gimp audacity vlc p7zip keepassxc
+```
+
+#### 3.1 Librewolf
+
+No need for firefox as I prefer Librewolf
+```
+sudo snap remove 
+```
+
+[https://librewolf.net/installation/debian/](https://librewolf.net/installation/debian/)
+
+#### 3.2 Calibre
+
+[https://calibre-ebook.com/download_linux](https://calibre-ebook.com/download_linux)
+
+
+#### 3.3 Spotify
+
+```
+sudo snap install spotify
+```
+
+[https://github.com/SpotX-Official/SpotX-Bash](https://github.com/SpotX-Official/SpotX-Bash)
