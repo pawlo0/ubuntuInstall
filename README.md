@@ -43,12 +43,14 @@ sudo snap install nextcloud gimp audacity vlc p7zip-desktop keepassxc
 
 #### 3.1 Librewolf
 
+[https://librewolf.net/installation/debian/](https://librewolf.net/installation/debian/)
+
 No need for firefox as I prefer Librewolf
 ```
-sudo snap remove 
+sudo snap remove firefox
 ```
 
-[https://librewolf.net/installation/debian/](https://librewolf.net/installation/debian/)
+
 
 #### 3.2 Calibre
 
