@@ -15,22 +15,26 @@ Or just download using the browser. Burn the iso into a USB stick
 
 Use Gparted to "Create Partition table" of type "msdos" in the disk that you will be installing Ubuntu.
 
-Then either preparing the disk ahead in Gparted or use the "Something else" during Ubuntu instalation. But in order to work, the following partitions need to be created. If using Gparted use flags to flag the swap partition as "swap" and the EFI partition as "boot,esp". Even if using Gparted, when installing Ubuntu, pick "Something else" so you can chose the mount points. From trial and error, the sequence matters:
+Then prepare the disk in Gparted during. In order to work, the following partitions need to be created. In Gparted use flags to flag the swap partition as "swap" and the EFI partition as "boot,esp". Then, when installing Ubuntu, pick "Something else" so you can chose the mount points.
 
 1. Primary - Ext4 - 1Gb - Mount on /Boot 
 2. Primary - Ext4 - (what's left) - Mount on /
 3. Primary - swap - 4Gb
 4. Primary  - fat32 - EFI - 1Gb
 
-Finish installing Ubuntu. 
+From trial and error, the sequence of partitions matters. Finish installing Ubuntu. 
 
 ### 3. Install some apps
 ```
-sudo apt update && sudo apt install gparted git
+sudo apt update && sudo apt upgrade
 ```
 
 ```
-sudo snap install code nextcloud gparted gimp audacity vlc p7zip keepassxc
+apt install gparted git
+```
+
+```
+sudo snap install code nextcloud gimp audacity vlc p7zip-desktop keepassxc
 ```
 
 #### 3.1 Librewolf
