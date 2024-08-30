@@ -34,7 +34,11 @@ apt install gparted git
 ```
 
 ```
-sudo snap install code nextcloud gimp audacity vlc p7zip-desktop keepassxc
+sudo snap install code --classic 
+```
+
+```
+sudo snap nextcloud gimp audacity vlc p7zip-desktop keepassxc
 ```
 
 #### 3.1 Librewolf
